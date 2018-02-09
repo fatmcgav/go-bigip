@@ -1710,7 +1710,7 @@ func (b *BigIP) PoolMemberStatus(pool string, member string, state string, owner
 
 	switch state {
 	case "enable":
-		// config.State = "unchecked"
+		config.State = "user-up"
 		config.Session = "user-enabled"
 	case "disable":
 		// config.State = "unchecked"
