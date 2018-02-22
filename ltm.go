@@ -1713,7 +1713,7 @@ func (b *BigIP) PoolMemberStatus(pool string, member string, state string, owner
 		config.State = "user-up"
 		config.Session = "user-enabled"
 	case "disable":
-		// config.State = "unchecked"
+		config.State = "user-up"
 		config.Session = "user-disabled"
 		// case "offline":
 		// 	config.State = "user-down"
